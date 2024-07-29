@@ -1,0 +1,59 @@
+# Ignorar diretórios e arquivos de ambiente virtual
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar arquivos de configuração do PyCharm
+.idea/
+
+# Ignorar arquivos de configuração do VS Code
+.vscode/
+
+# Ignorar arquivos de cache e compilação do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info
+*.mypy_cache
+*.pytest_cache
+*.coverage
+*.nox
+*.tox
+*.coverage.*
+*.hypothesis/
+.coverage
+*.log
+
+# Ignorar arquivos de distribuição
+dist/
+build/
+*.egg-info/
+
+# Ignorar arquivos gerados pelo setup
+*.dist-info/
+
+# Ignorar arquivos de teste
+tests/__pycache__/
+tests/*.pyc
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
+
+# Ignorar arquivos gerados por ferramentas de build
+*.out
+*.d
+
+# Ignorar arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de configuração local
+*.env
+.env
