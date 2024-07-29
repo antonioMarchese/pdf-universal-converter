@@ -1,7 +1,6 @@
-
 # Document Generator
 
-** Document Generator** é uma biblioteca Python para a geração de documentos em formatos PDF, Excel e CSV. Ela oferece uma interface simples e flexível para criar documentos profissionais de maneira rápida e eficiente.
+**Document Generator** é uma biblioteca Python para a geração de documentos em formatos PDF, Excel e CSV. Ela oferece uma interface simples e flexível para criar documentos profissionais de maneira rápida e eficiente.
 
 ## Instalação
 
@@ -147,7 +146,7 @@ Para manter o controle das versões da sua biblioteca, você pode criar tags no 
 
 2. Criar uma Nova Tag
 
-    Crie uma nova tag de versão. Substitua vX.X.X pela versão apropriada, seguindo as diretrizes do [Versionamento Semântico](https://semver.org/lang/pt-BR/):
+    Crie uma nova tag de versão. Substitua vX.X.X pela versão apropriada, seguindo as diretrizes do [Versionamento Semântico](https://semver.org/lang/pt-BR/). É importante alterar a versão no arquivo `setup.py`:
 
     ```bash
     git tag vX.X.X
