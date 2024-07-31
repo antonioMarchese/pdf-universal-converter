@@ -12,10 +12,14 @@ class Converter:
         self.dispatcher = converter_dispatcher
         self.base_dir = base_dir if base_dir is not None else os.path.join('document_converter', 'uploads')
 
-    def convert(self, file_path: str, serve=False) -> Optional[str]:
+    def convert(self, file_path: str, output_file_name: Optional[str] = None, serve=False) -> Optional[str]:
+        """
+            Converts the file in 'file_path' to PDF to 'output_file_name.pdf' or some uuid.pdf, if output_file_name
+            is not provided.
+        """
         try:
             file_extension = file_path.split('.')[-1]
-            output_file = f"{uuid.uuid4()}.pdf"
+            output_file = "{0}.pdf".format(uuid.uuid4() if not output_file_name else output_file_name)
             converted = self.dispatcher.dispatch(file_extension, payload={
                 'output_file_path': os.path.join(self.base_dir, output_file),
                 'file_path': file_path
