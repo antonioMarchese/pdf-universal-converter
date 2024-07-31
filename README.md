@@ -49,7 +49,7 @@ Após a instalação do wkhtmltopdf, a biblioteca `document_generator` poderá u
 Para gerar um documento PDF:
 
 ```python
-from document_generator import PDFGenerator
+from document_converter import PDFGenerator
 
 pdf = PDFGenerator()
 pdf.create_canvas("example.pdf", orientation='landscape')
@@ -62,7 +62,7 @@ pdf.save("example.pdf")
 Para gerar uma planilha Excel:
 
 ```python
-from document_generator import XlsxGenerator
+from document_converter import XlsxGenerator
 
 xlsx = XlsxGenerator()
 xlsx.create_workbook("example.xlsx")
@@ -75,7 +75,7 @@ xlsx.save("example.xlsx")
 Para gerar um arquivo CSV:
 
 ```python
-from document_generator import CSVGenerator
+from document_converter import CSVGenerator
 
 csv = CSVGenerator()
 csv.create_csv("example.csv")

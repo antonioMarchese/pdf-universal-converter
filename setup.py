@@ -12,9 +12,9 @@ with open(requirements_path) as req_file:
             requirements.append(req_line)
 
 setup(
-    name='document_generator',
+    name='pdfu_universal_converter',
     version='0.0.1',
-    description='A library for generating PDF, Excel, and CSV documents',
+    description='A library for generating PDF from all formats',
     classifiers=[
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
@@ -26,7 +26,7 @@ setup(
     url='https://gitlab.govone.digital/govone/document_generator.git',
     keywords=['govone', 'document', 'generator', 'pdf', 'excel', 'csv'],
     packages=find_packages(where='document_generator'),
-    package_dir={"": "document_generator"},
+    package_dir={"": "pdf_converter"},
     setup_requires=['wheel'],
     include_package_data=True,
     zip_safe=False,
