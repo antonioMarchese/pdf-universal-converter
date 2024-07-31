@@ -27,7 +27,7 @@ class Converter:
             if converted:
                 print("Converted successfully")
                 if serve:
-                    file = open(output_file)
+                    file = open(os.path.join(self.base_dir, output_file))
                     return file.read()
             else:
                 print("Error converting file")
